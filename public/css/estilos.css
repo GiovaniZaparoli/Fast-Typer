@@ -49,3 +49,16 @@ body{
 #btn-sync {
     float: right;
 }
+
+.select-usuarios {
+    display: inline-block;
+}
+
+#usuarios {
+    display: block
+}
+
+.input-user{
+    width: 150px;
+    vertical-align: middle;
+}

@@ -8,6 +8,13 @@ $(document).ready(function(){
     inicializaMarcadores();
     atualizaPlacar();
     $("#btn-reiniciar").click(reiniciaJogo);
+    $("#usuarios").selectize({
+        create: true,
+        sortiField: 'text'
+    });
+    $('.tolltip').tooltipster({
+        trigger: 'custom'
+    });
 });
 
 function atualizaTempo(tempo) {

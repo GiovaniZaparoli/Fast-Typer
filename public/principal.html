@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
 </head>
 <body>
     <div class="container">
@@ -44,7 +46,16 @@
                 <i class="material-icons">repeat_one</i>
             </a>
             <input type="number" id="frase-id" min="0">
-            <a class="btn-floating btn-large waves-effect waves-light orange" id="btn-sync">
+
+            <div class="select-usuarios input-user">
+                <select id="usuarios">
+                    <option value="Giovani">Giovani</option>
+                    <option value="FPGA">FPGA</option>
+                    <option value="Vituxo">Vituxo</option>
+                </select>
+            </div>
+
+            <a class="tooltip btn-floating btn-large waves-effect waves-light orange" id="btn-sync" title="Sincronizado com sucesso!">
                 <i class="material-icons">swap_vert</i>
             </a>
         </div>
@@ -75,5 +86,7 @@
     <script src="js/main.js"></script>
     <script src="js/frase.js"></script>
     <script src="js/placar.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
 </body>
 </html>
